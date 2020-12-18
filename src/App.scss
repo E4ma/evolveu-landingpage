@@ -1,0 +1,1543 @@
+@import './variables';
+@import './mixins/vendor-prefixes';
+@import './mixins/alerts';
+@import './mixins/buttons';
+@import './mixins/inputs';
+@import './mixins/labels';
+@import './mixins/navbars';
+@import './mixins/popovers';
+@import './mixins/tabs';
+@import './mixins/transparency';
+
+
+
+
+
+// sections
+.section{
+    padding: 70px 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.section-with-space{
+    padding: 60px 0;
+}
+.section-gray{
+    background-color: #EEEEEE;
+}
+.section-nude{
+    background-color: #FFFCF5;
+}
+.section-gold{
+    background-color: #caac90;
+    color: $white-color;
+}
+.section-brown{
+    background-color: #A59E94;
+    color: $white-color;
+}
+.section-light-blue{
+    background-color: $primary-color;
+    color: $white-color;
+}
+.section-dark-blue{
+    background-color: #506367;
+    color: $white-color;
+}
+.section-dark{
+    background-color: #0b1011;
+}
+.section-image,
+.section-gold,
+.section-dark{
+    position: relative;
+
+    .title,
+    .info-title,
+    .card-plain .card-title{
+        color: $white-color !important;
+    }
+    .category,
+    .description,
+    .card-plain .card-description,
+    .card-plain .card-category{
+        color: rgba($white-color, .7);
+    }
+    hr{
+        border-color: rgba(255, 255, 255, 0.19);
+    }
+}
+.page-header,
+.carousel-caption{
+    .title,
+    .info-title{
+        color: $white-color;
+    }
+}
+[class*="features-"],
+[class*="team-"],
+[class*="projects-"],
+[class*="pricing-"],
+[class*="testimonials-"],
+[class*="contactus-"]{
+    padding: 80px 0;
+}
+.section-image{
+    background-position: center center;
+    background-size: cover;
+
+    &:before{
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    & .container{
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.section-login{
+    min-height: 700px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .page-header{
+        .content-center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+        }
+        .presentation-title{
+            background: none !important;
+        }
+    }
+}
+
+
+[class*="features-"],
+[class*="team-"],
+[class*="projects-"],
+[class*="pricing-"],
+[class*="testimonials-"],
+[class*="contactus-"] {
+    padding: 80px 0;
+}
+.section-image {
+    background-position: center center;
+    background-size: cover;
+
+    &:before {
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    & .container {
+        position: relative;
+        z-index: 2;
+    }
+}
+//e
+.landing-alert{
+    margin-bottom: 0;
+}
+.page-header{
+    background-color: #B2AFAB;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .filter::after{
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    &.page-header-small{
+        min-height: 65vh !important;
+        max-height: 700px;
+    }
+    &.page-header-xs{
+        min-height: 40vh !important;
+    }
+
+    &.section-dark{
+        .content-center,
+        .category-absolute{
+            z-index: 1;
+        }
+    }
+}
+.page-header .motto{
+    text-align: left;
+    z-index: 3;
+    color: #fff;
+    position: relative;
+
+}
+.landing-section{
+    padding: 100px 0;
+    z-index: 1;
+}
+.section-buttons{
+    z-index: 1;
+}
+.landing-section .btn-simple{
+    padding: 0;
+}
+.landing-section .column{
+    padding: 0 75px 0 25px;
+}
+.team-player .img-circle, .team-player .img-thumbnail{
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+}
+.contact-form{
+    margin-top: 30px;
+}
+.contact-form label{
+    margin-top: 15px;
+}
+.contact-form .btn{
+    margin-top: 30px;
+}
+
+.navbar-relative{
+    position: relative;
+    z-index: 2;
+}
+#register-navbar a{
+    color: #FFF;
+}
+.register-background .container{
+    margin-top: 11%;
+    position: relative;
+    z-index: 3;
+}
+.register-footer{
+    bottom: 20px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background: transparent;
+    color: $white-color;
+}
+.register-footer .fa-heart{
+    color: #EB5E28;
+}
+
+.register-card label{
+    margin-top: 15px;
+}
+.register-card .title{
+    color: #B33C12;
+    text-align: center;
+}
+.register-card .btn{
+    margin-top: 30px;
+}
+.register-card .forgot{
+    text-align: center;
+}
+
+.profile-content{
+    position: relative;
+}
+.owner{
+    text-align: center;
+}
+.owner .avatar{
+    padding: 15px;
+    max-width: 180px;
+    margin: -85px auto 0;
+    display: inline-block;
+}
+.owner .name h4{
+    margin-top: 10px;
+}
+.profile-tabs{
+    margin: 50px 0;
+    min-height: 300px;
+}
+#following h3{
+    margin: 20px 0 40px 0;
+}
+
+#follows .follows .unfollow .checkbox{
+    margin-top: -15px;
+}
+#follows .follows h6{
+    margin-top: 15px;
+}
+.follows hr{
+    margin-top: 10px;
+}
+.alert h5{
+    // margin-bottom: 10px;
+}
+.title-brand{
+    max-width: 730px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    color: #FFFFFF;
+    display: block;
+
+    .type{
+        position: absolute;
+        font-size: 20px;
+        background: #132026;
+        padding: 6px 10px;
+        border-radius: 4px;
+        top: 0;
+        font-weight: 600;
+        margin-top: 10px;
+        right: -15px;
+    }
+}
+
+.presentation-title{
+    font-size: 8em;
+    font-weight: 700;
+    margin: 0;
+    color: #FFFFFF;
+    background: #fbf8ec;
+    background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
+    background: -webkit-linear-gradient(top, #FFFFFF 35%,#4e6773 100%);
+    background: -ms-linear-gradient(top, #FFFFFF 35%,#4e6773 100%);
+    background: linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.presentation-subtitle{
+    font-size: 1.7em;
+    color: #FFFFFF;
+}
+
+.category-absolute{
+    position: absolute;
+    text-align: center;
+    top: 100vh;
+    margin-top: -60px;
+    padding: 0 15px;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.5);
+
+    .creative-tim-logo {
+        max-width: 140px;
+        top: -2px;
+        left: 3px;
+        position: relative;
+    }
+}
+
+.fog-low{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -35%;
+    margin-bottom: -50px;
+    width: 110%;
+    opacity: .85;
+
+    img{
+        width: 100%;
+    }
+
+    &.right{
+        margin-left: 30%;
+        opacity: 1;
+    }
+}
+.page-header{
+    .content-center{
+        margin-top: 85px;
+    }
+}
+.moving-clouds{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 250.625em;
+    height: 43.75em;
+    -webkit-animation: cloudLoop 80s linear infinite;
+    animation: cloudLoop 80s linear infinite;
+}
+
+@keyframes cloudLoop{   0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+                        100%{-webkit-transform:translate3d(-50%,0,0);
+                        transform:translate3d(-50%,0,0)}
+                    }
+.following{
+    img{
+        max-width: 70px;
+    }
+}
+
+
+.profile-content{
+    & .tab-content{
+        & .tab-pane{
+            min-height: 200px;
+        }
+        & #tweets, #connections, #media{
+            height: 100%;
+        }
+    }
+}
+//cards
+.card-profile {
+    margin-top: 30px;
+    text-align: center;
+  
+    .card-cover {
+      height: 130px;
+      background-position: center center;
+      background-size: cover;
+      border-radius: $border-radius-extreme $border-radius-extreme 0 0;
+    }
+  
+    .card-body {
+      .card-title {
+        margin-top: 5px !important;
+      }
+      .card-category {
+        margin-bottom: 5px;
+        margin-top: 5px;
+      }
+    }
+  
+    .card-avatar {
+      max-width: 120px;
+      max-height: 120px;
+      margin: -60px auto 0;
+      border-radius: 50%;
+      overflow: hidden;
+  
+      &.border-white {
+          border: 4px solid $white-color;
+      }
+      &.border-gray {
+          border: 4px solid $card-muted-color;
+      }
+    }
+  
+  }
+  
+  .section {
+    .card-profile {
+      margin-top: 100px;
+    }
+  }
+//images
+.img-rounded{
+    border-radius: $border-radius-extreme;
+    transition: opacity 0.5s ease 0s;
+    max-width: 100%;
+}
+.img-details{
+    min-height: 50px;
+    padding: 0 4px 0.5em;
+
+}
+.img-details img{
+    width: 50px;
+}
+.img-details .author{
+    margin-left: 10px;
+    margin-top: -21px;
+    width: 40px;
+}
+.img-circle{
+    background-color: $white-color;
+    margin-bottom: 10px;
+    padding: 4px;
+    border-radius: 50% !important;
+    max-width: 100%;
+}
+.img-thumbnail{
+    border: 0 none;
+    border-radius: $border-radius-extreme;
+    box-shadow: 0 1px 2px rgba(164, 158, 147, 0.6);
+    margin-bottom: 10px;
+}
+.img-no-padding{
+    padding: 0px;
+}
+.example-page .img-rounded{
+    margin: 50px 0 20px;
+}
+.img-shadow{
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12),
+                0 5px 5px -3px rgba(0, 0, 0, 0.2)
+}
+.images-title{
+    margin-bottom: 20px;
+    height: 50px;
+}
+.nav-link .profile-photo-small{
+    width: 40px;
+    height: 30px;
+    margin: -10px 0 0 -15px;
+}
+.profile-picture{
+    margin: 0 auto;
+    .fileinput-new img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .fileinput-exists img{
+        max-width: 150px;
+        max-height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+}
+//typography & heart
+/*           Font Smoothing      */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea{
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-light;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4{
+    margin: $margin-large-vertical 0 0;
+}
+h1, .h1 {
+    font-size: $font-size-h1;
+}
+h2, .h2{
+    font-size: $font-size-h2;
+}
+h3, .h3{
+    font-size: $font-size-h3;
+    line-height: 1.4;
+    margin: 20px 0 0px;
+}
+h4, .h4{
+    font-size: $font-size-h4;
+    line-height: 1.2em;
+}
+h5, .h5 {
+    font-size: $font-size-h5;
+    line-height: 1.4em;
+}
+h6, .h6{
+    font-size: $font-size-h6;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    line-height: 1.5em;
+}
+p{
+    font-size: $font-paragraph;
+    line-height: $line-height-general;
+    margin-bottom: 5px;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
+    color: $dark-gray;
+    line-height: $line-height-general;
+}
+
+h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
+    font-size: 60%;
+}
+
+.title,
+.card-title,
+.info-title,
+.footer-brand,
+.footer-big h5,
+.footer-big h4,
+.media .media-heading{
+    font-family: $font-family-sans-serif;;
+
+    &,
+    a{
+        color: $card-black-color;
+        text-decoration: none;
+    }
+}
+.title-uppercase{
+    text-transform: uppercase;
+}
+.description{
+    color: $dark-gray;
+}
+blockquote small{
+    font-style: normal;
+}
+.text-muted{
+    color: $medium-gray;
+}
+.text-primary, .text-primary:hover{
+    color: $primary-color !important;
+}
+.text-info, .text-info:hover{
+    color: $info-color !important;
+}
+.text-success, .text-success:hover{
+    color: $success-color !important;
+}
+.text-warning, .text-warning:hover{
+    color: $warning-color !important;
+}
+.text-danger, .text-danger:hover{
+    color: $danger-color !important;
+}
+.glyphicon{
+    line-height: 1;
+}
+
+// Pulsing Heart (footer)
+.heart {
+  color: #EB5E28;
+  animation: heathing 1s ease infinite,;
+}
+
+@keyframes heathing {
+  0% { transform: scale( .75 ); }
+  20% { transform: scale( 1 ); }
+  40% { transform: scale( .75 ); }
+  60% { transform: scale( 1 ); }
+  80% { transform: scale( .75 ); }
+  100% { transform: scale( .75 ); }
+}
+.footer .credits,
+.footer-nav{
+    line-height: 85px;
+}
+.footer .btn{
+    margin-bottom: 0;
+}
+.blockquote{
+    border-left: 0 none;
+    border-bottom: 1px solid #CCC5B9;
+    border-top: 1px solid #CCC5B9;
+    font-weight: 300;
+    margin: 15px 0 10px;
+    text-align: center;
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+}
+.title.text-center{
+    margin-bottom: 50px;
+}
+//misc 
+/*     General overwrite     */
+body{
+    color: $font-color;
+    font-size: $font-size-base;
+    font-weight: $font-weight-light;
+    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+}
+a{
+  color: $info-color;
+
+  &:hover, &:focus{
+     color: $info-states-color;
+     text-decoration: none;
+  }
+
+  // @include transition($fast-transition-time, linear);
+}
+hr{
+    border-color: $medium-pale-bg;
+}
+.icon{
+    fill: $font-color;
+}
+.fa-base{
+    font-size: 1.25em !important;
+}
+a:focus, a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    outline : 0;
+}
+.ui-slider-handle:focus,
+.navbar-toggle {
+    outline : 0 !important;
+}
+
+
+/*           Animations              */
+.form-control,
+.input-group-addon,
+.tagsinput,
+.navbar,
+.navbar .alert,
+.carousel-control.right,
+.carousel-control.left
+{
+    @include transition($general-transition-time, linear);
+}
+.tagsinput .tag,
+.tagsinput-remove-link,
+.filter,
+.btn-hover,
+[data-toggle="collapse"] i,
+.animation-transition-fast,
+.dropdown-menu .dropdown-item{
+    @include transition($fast-transition-time, linear);
+}
+
+.btn-morphing .fa,
+.btn-morphing .circle,
+.gsdk-collapse{
+    @include transition($slow-transition-time, linear);
+}
+
+.fa{
+    width: 18px;
+    text-align: center;
+}
+.margin-top{
+    margin-top: 50px;
+}
+
+.iframe-container iframe{
+    box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
+
+/*       CT colors          */
+.ct-blue{
+    color: $primary-color;
+}
+.ct-azure{
+    color: $info-color;
+}
+.ct-green{
+    color: $success-color;
+}
+.ct-orange{
+    color: $warning-color;
+}
+.ct-red{
+    color: $danger-color;
+}
+
+//stefan changes
+
+.pagination .page-item .page-link .fa{
+    width: auto;
+    font-weight: $font-weight-bold;
+}
+
+.bg-primary{
+    @include navbar-color($bg-primary !important);
+}
+.bg-info{
+    @include navbar-color($bg-info !important);
+}
+.bg-success{
+    @include navbar-color($bg-success !important);
+}
+.bg-warning{
+    @include navbar-color($bg-warning !important);
+}
+.bg-danger{
+    @include navbar-color($bg-danger !important);
+}
+
+
+.wrapper {
+  -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  left: 0;
+  background-color: $white-color;
+  position: relative;
+  z-index: 1;
+}
+
+// Pulsing Heart (footer)
+.heart {
+  color: #EB5E28;
+  animation: heathing 1s ease infinite,;
+}
+
+@keyframes heathing {
+  0% { transform: scale( .75 ); }
+  20% { transform: scale( 1 ); }
+  40% { transform: scale( .75 ); }
+  60% { transform: scale( 1 ); }
+  80% { transform: scale( .75 ); }
+  100% { transform: scale( .75 ); }
+}
+
+
+.bd-docs {
+  .page-header {
+    min-height: 50vh;
+  }
+}
+
+.offline-doc {
+  .navbar.navbar-transparent{
+    padding-top: 25px;
+    border-bottom: none;
+
+    .navbar-minimize {
+      display: none;
+    }
+    .navbar-brand,
+    .collapse .navbar-nav .nav-link {
+      color: $white-color !important;
+    }
+  }
+
+  .footer{
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    bottom: 0;
+    z-index: 3;
+
+    nav > ul a:not(.btn),
+    .copyright {
+      color: $white-color !important;
+    }
+  }
+
+  .page-header{
+      .page-header-image {
+        position: absolute;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+    .container {
+      z-index: 3;
+    }
+    &:after {
+      background-color: rgba(0, 0, 0, 0.5);
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}
+
+.main .section:first-of-type {
+    position: relative;
+    z-index: 2;
+}
+//buttons
+.btn{
+    box-sizing: border-box;
+    border-width: $border-thick;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    padding: .5rem $padding-base-horizontal;
+    line-height: 1.75;
+    cursor: pointer;
+    text-transform: uppercase;
+
+
+    &.btn-border,
+    &.btn-link{
+        background-color: $transparent-bg;
+    }
+
+    @include btn-styles($default-color, $default-states-color);
+    @include transition($fast-transition-time, linear);
+
+    &:hover,
+    &:focus{
+        outline: 0 !important;
+        @include box-shadow(none);
+    }
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle {
+         @include box-shadow(none);
+         outline: 0 !important;
+    }
+
+    &[class*="btn-outline-"]{
+        background-image: none;
+        background-color: transparent;
+    }
+
+    .nc-icon{
+        position: relative;
+        top: 2px;
+    }
+}
+.btn-just-icon{
+    border-radius: $border-radius-btn-large;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    padding: 8px;
+
+    &.btn-sm{
+        padding: 4px !important;
+    }
+    i{
+        font-size: $font-size-medium;
+        padding: 2px 0px;
+    }
+}
+
+.btn-group .btn + .btn,
+.btn-group .btn + .btn-group,
+.btn-group .btn-group + .btn,
+.btn-group .btn-group + .btn-group{
+    margin-left: -2px;
+}
+
+
+// Apply the mixin to the buttons
+.btn-primary { @include btn-styles($primary-color, $primary-states-color); }
+.btn-success { @include btn-styles($success-color, $success-states-color); }
+.btn-info    { @include btn-styles($info-color, $info-states-color); }
+.btn-warning { @include btn-styles($warning-color, $warning-states-color); }
+.btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
+.btn-neutral  { @include btn-styles($white-color, $default-states-color); }
+
+.btn-outline-default { @include btn-outline-styles($default-color, $default-states-color); }
+.btn-outline-primary { @include btn-outline-styles($primary-color, $primary-states-color); }
+.btn-outline-success { @include btn-outline-styles($success-color, $success-states-color); }
+.btn-outline-info    { @include btn-outline-styles($info-color, $info-states-color); }
+.btn-outline-warning { @include btn-outline-styles($warning-color, $warning-states-color); }
+.btn-outline-danger  { @include btn-outline-styles($danger-color, $danger-states-color); }
+.btn-outline-neutral { @include btn-outline-styles($white-color, $default-states-color);
+    &:hover,
+    &:focus,
+    &:active {
+        color: $default-states-color !important;
+        background-color: $white-color;
+    }
+}
+.btn-neutral {
+    @include btn-styles($white-color, $white-color);
+    color: $default-color;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $default-states-color !important;
+    }
+
+    &.btn-border{
+        &:hover,
+        &:focus{
+          color: $default-color;
+        }
+
+        &:active,
+        &.active,
+        .open > &.dropdown-toggle{
+             background-color: $white-color;
+             color: $default-color;
+        }
+    }
+    &.btn-link:hover,
+    &.btn-link:focus,
+    &.btn-link:active {
+      color: $white-color !important;
+    }
+
+    &.btn-link:focus:active {
+      color: $default-states-color !important;
+    }
+
+    &.btn-link:active,
+    &.btn-link.active{
+        background-color: transparent;
+    }
+}
+
+.btn{
+     &:disabled,
+     &[disabled],
+     &.disabled{
+        @include opacity(.5);
+    }
+}
+.btn-link{
+    border-color: transparent !important;
+    padding: $padding-base-vertical $padding-base-horizontal;
+
+    &:hover,
+    &:focus,
+    &:active{
+        text-decoration: none;
+        border-color: transparent;
+    }
+
+    &.btn-icon{
+        padding: $padding-base-vertical;
+    }
+}
+
+.btn-lg{
+   @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-small);
+}
+.btn-sm{
+    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small);
+}
+.btn-wd {
+    min-width: 140px;
+}
+
+.btn-group.select{
+    width: 100%;
+}
+.btn-group.select .btn{
+    text-align: left;
+}
+.btn-group.select .caret{
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    right: 8px;
+}
+.btn-just-icon{
+    &.btn-sm{
+        height: 30px;
+        width: 30px;
+        min-width: 30px;
+        padding: 0;
+
+        i{
+            font-size: $font-size-small;
+            top: 1px !important;
+        }
+    }
+    &.btn-lg{
+        height: 50px;
+        width: 50px;
+        min-width: 50px;
+        padding: 13px;
+
+        i{
+            font-size: 18px;
+            padding: 0;
+        }
+    }
+    &.btn-link{
+        padding: 8px !important;
+    }
+}
+.btn-round{
+    border-radius: 30px;
+}
+.btn.btn-link:focus{
+    box-shadow: none !important;
+    text-decoration: none;
+}
+
+.column .btn-link{
+    padding: 7px 0;
+}
+.share-buttons .btn-outline-default{
+    margin-top: 24px;
+}
+.btn-group.select{
+    overflow: visible !important;
+}
+.media{
+    .media-body{
+        .media-footer{
+            .btn-neutral{
+               margin: $navbar-margin-btn;
+               font-size: $font-size-base;
+               i{
+                   margin-right: 0 !important;
+               }
+           }
+        }
+    }
+}
+// Mixin for generating new styles
+@mixin btn-styles($btn-color, $btn-states-color) {
+    background-color: $btn-color;
+    border-color: $btn-color;
+    color: $white-color;
+    @include opacity(1);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:active:focus,
+    &:active:hover,
+    &.active:focus,
+    &:not(:disabled):not(.disabled):active:focus,
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled).active:focus,
+    .show > &.dropdown-toggle{
+        background-color: $btn-states-color;
+        color: $white-color;
+        border-color: $btn-states-color;
+        box-shadow: none;
+    }
+
+    .caret{
+        border-top-color: $white-color;
+    }
+
+    &.disabled,
+    &:disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      &,
+      &:hover,
+      &:focus,
+      &.focus,
+      &:active,
+      &.active {
+        background-color: $btn-states-color;
+        border-color: $btn-states-color;
+      }
+    }
+
+    &.btn-link {
+        color: $btn-color;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        &:focus:active,
+        .open > &.dropdown-toggle{
+            background-color: $transparent-bg !important;
+            color: $btn-states-color !important;
+        }
+
+        .caret{
+            border-top-color: $btn-color;
+        }
+    }
+
+    .caret{
+      border-top-color: $white-color;
+    }
+}
+
+@mixin btn-outline-styles($btn-color, $btn-states-color){
+    border-color: $btn-color;
+    color: $btn-color;
+    @include opacity(1);
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &:active:focus,
+    &:active:hover,
+    &.active:focus,
+    .show > &.dropdown-toggle {
+      background-color: $btn-color !important;
+      color: $fill-font-color;
+      border-color: $btn-color !important;
+      .caret{
+          border-top-color: $fill-font-color;
+      }
+    }
+
+    .caret{
+        border-top-color: $white-color;
+    }
+
+    &.disabled,
+    &:disabled,
+    &[disabled],
+    fieldset[disabled] & {
+      &,
+      &:hover,
+      &:focus,
+      &.focus,
+      &:active,
+      &.active {
+        background-color: $transparent-bg;
+        border-color: $btn-color;
+      }
+    }
+}
+
+@mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height){
+   font-size: $font-size;
+   padding: $padding-vertical $padding-horizontal;
+
+   &.btn-simple{
+       padding: $padding-vertical + 2 $padding-horizontal;
+   }
+
+}
+
+
+//variables
+$font-color:                 #66615b !default;
+$fill-font-color:            rgba(255, 255, 255, 0.8);
+$font-family-sans-serif:     'Montserrat', "Helvetica", Arial, sans-serif;
+
+$none:                       0   !default;
+$border-thin:                1px !default;
+$border-thick:               2px !default;
+
+$white-color:                #FFFFFF !default;
+$white-bg:                   #FFFFFF !default;
+$white-states-color:         rgba($white-color, 0.8);
+
+$smoke-bg:                   #F5F5F5 !default;
+$pale-bg:                    #FFFCF5 !default;
+$medium-pale-bg:             #F1EAE0 !default;
+
+$table-line-color:           #ccc !default;
+$muted-color:                #a49e93 !default;
+
+$black-bg:                   rgba(30,30,30,.97) !default;
+
+$black-color:                #333333 !default;
+$black-hr:                   #444444 !default;
+
+$light-gray:                 #E3E3E3 !default;
+$medium-gray:                #DDDDDD !default;
+$dark-gray:                  #9A9A9A !default;
+
+$placeholder-gray:           rgba(210, 210, 210, 1)  !default;
+
+$gray-input-bg:              #fffcf5 !default;
+$danger-input-bg:            #FFC0A4 !default;
+$success-input-bg:           #ABF3CB !default;
+$other-medium-gray:          #A49E93 !default;
+$transparent-bg:             transparent !default;
+
+$default-color:              #66615B !default;
+$default-bg:                 #66615B !default;
+$default-states-color:       #403D39 !default;
+
+$primary-color:              #51cbce !default;
+$primary-states-color:       darken($primary-color, 10%) !default;
+
+$success-color:              #6bd098 !default;
+$success-states-color:       darken($success-color, 10%) !default;
+
+$info-color:                 #51bcda !default;
+$info-states-color:          darken($info-color, 10%) !default;
+
+$warning-color:              #fbc658 !default;
+$warning-states-color:       darken($warning-color, 10%) !default;
+
+$danger-color:               #f5593d !default;
+$danger-states-color:        darken($danger-color, 8%) !default;
+
+$link-disabled-color:        #666666 !default;
+
+$purple-color:               #c178c1 !default;
+$purple-states-color:        darken($purple-color, 8%) !default;
+
+$brown-color:                #dcb285 !default;
+$brown-states-color:         darken($brown-color, 8%) !default;
+
+
+
+
+/*      light colors - used for select dropdown         */
+
+$light-blue:                 rgba($primary-color, .2);
+$light-azure:                rgba($info-color, .2);
+$light-green:                rgba($success-color, .2);
+$light-orange:               rgba($warning-color, .2);
+$light-red:                  rgba($danger-color, .2);
+
+
+//== Components
+//
+$padding-base-vertical:         7px !default;
+$padding-base-horizontal:       18px !default;
+
+$padding-round-vertical:        9px !default;
+$padding-round-horizontal:     18px !default;
+
+$padding-simple-vertical:      10px !default;
+$padding-simple-horizontal:    18px !default;
+
+$padding-large-vertical:       11px !default;
+$padding-large-horizontal:     30px !default;
+
+$padding-small-vertical:        4px !default;
+$padding-small-horizontal:     10px !default;
+
+$padding-xs-vertical:           2px !default;
+$padding-xs-horizontal:         5px !default;
+
+$padding-label-vertical:        2px !default;
+$padding-label-horizontal:     12px !default;
+
+// padding for links inside dropdown menu
+$padding-dropdown-vertical:     10px !default;
+$padding-dropdown-horizontal:   15px !default;
+
+$margin-large-vertical:        30px !default;
+$margin-base-vertical:         15px !default;
+
+// border radius for buttons
+$border-radius-none:             0px !default;
+$border-radius-btn-small:      26px !default;
+$border-radius-btn-base:       20px !default;
+$border-radius-btn-large:      50px !default;
+
+
+$margin-bottom:                0 0 10px 0 !default;
+$border-radius-small:           3px !default;
+$border-radius-base:            4px !default;
+$border-radius-large:           6px !default;
+$border-radius-x-large:         8px !default;
+$border-radius-extreme:         12px !default;
+
+$border-radius-none-top:      $border-radius-none $border-radius-none 0 0 !default;
+$border-radius-none-bottom:   0 0 $border-radius-none $border-radius-none !default;
+
+$border-radius-small-top:      $border-radius-small $border-radius-small 0 0 !default;
+$border-radius-small-bottom:   0 0 $border-radius-small $border-radius-small !default;
+
+$border-radius-large-top:      $border-radius-large $border-radius-large 0 0 !default;
+$border-radius-large-bottom:   0 0 $border-radius-large $border-radius-large !default;
+
+$btn-round-radius:             30px !default;
+
+$height-base:                  40px !default;
+
+$font-size-base:               14px !default;
+$font-size-small:              12px !default;
+$font-size-medium:             16px !default;
+$font-size-large:              20px !default;
+$font-size-large-navbar:       22px !default;
+
+$font-size-h1:                 3.6em !default;
+$font-size-h2:                 2.8em !default;
+$font-size-h3:                 1.825em !default;
+$font-size-h4:                 1.6em !default;
+$font-size-h5:                 1.35em !default;
+$font-size-h6:                 0.9em !default;
+$font-paragraph:               15px !default;
+$font-size-navbar:             14px !default;
+
+$font-size-info-horizontal:    2.5em !default;
+
+$font-weight-light:          300 !default;
+$font-weight-normal:         400 !default;
+$font-weight-semi:           500 !default;
+$font-weight-bold:           600 !default;
+
+$line-height-small:            20px !default;
+$line-height-general:          1.5em !default;
+$line-height:                 36px !default;
+$line-height-lg:              54px !default;
+
+
+$border-radius-top:        10px 10px 0 0 !default;
+$border-radius-bottom:     0 0 10px 10px !default;
+$border-radius-dropdown:   10px 10px !default;
+
+$dropdown-shadow:          0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
+
+$general-transition-time:  300ms !default;
+
+$slow-transition-time:           300ms !default;
+$dropdown-coordinates:      29px -50px !default;
+
+$fast-transition-time:           150ms !default;
+$select-coordinates:         50% -40px !default;
+
+$transition-linear:                                   linear !default;
+$transition-bezier:         cubic-bezier(0.34, 1.61, 0.7, 1) !default;
+$transition-ease:           ease 0s;
+
+$navbar-padding-a:               10px 15px;
+$navbar-margin-a:                15px  3px;
+
+$padding-social-a:               10px  5px;
+
+$navbar-margin-a-btn:            15px 3px;
+$navbar-margin-a-btn-round:      16px 3px;
+
+$navbar-padding-a-icons:         6px 15px;
+$navbar-margin-a-icons:          6px  3px;
+
+$navbar-padding-brand:           20px 15px;
+$navbar-margin-brand:             5px  0px;
+
+$navbar-margin-brand-icons:      12px auto;
+
+$navbar-margin-btn:              15px  3px;
+
+$height-icon:					 64px !default;
+$width-icon:					 64px !default;
+$padding-icon:					 12px !default;
+$border-radius-icon:		     15px !default;
+
+$size-icon: 					 64px;
+$size-icon-sm: 					 32px;
+
+
+$height-icon-sm:				 32px;
+$width-icon-sm:					 32px;
+$padding-icon-sm:			     4px;
+$border-radius-icon-sm:			 7px;
+
+$height-icon-message:			 40px;
+$width-icon-message:			 40px;
+
+$height-icon-message-sm: 		 20px;
+$width-icon-message-sm:			 20px;
+
+
+
+$white-navbar:              rgba(#FFFFFF, .96);
+$blue-navbar:               rgba(#34ACDC, .98);
+$azure-navbar:              rgba(#5BCAFF, .98);
+$green-navbar:              rgba(#4CD964, .98);
+$orange-navbar:             rgba(#FF9500, .98);
+$red-navbar:                rgba(#FF4C40, .98);
+
+$bg-nude:               #FFFCF5 !default;
+$bg-primary:            lighten($primary-color, 7%) !default;
+$bg-info:               lighten($info-color, 7%) !default;
+$bg-success:            lighten($success-color, 7%) !default;
+$bg-warning:            lighten($warning-color, 7%) !default;
+$bg-danger:             lighten($danger-color, 7%) !default;
+$bg-brown:              lighten($brown-color, 7%) !default;
+$bg-purple:             lighten($purple-color, 7%) !default;
+
+$preloader-color:          #D8D1C9 !default;
+
+$filter-blue:         darken($primary-color, 10%);
+$filter-azure:        darken($info-color, 10%);
+$filter-green:        darken($success-color, 10%);
+$filter-orange:       darken($warning-color, 10%);
+$filter-red:          darken($danger-color, 10%);
+
+
+$topbar-x:             topbar-x !default;
+$topbar-back:          topbar-back !default;
+$bottombar-x:          bottombar-x !default;
+$bottombar-back:       bottombar-back !default;
+
+$social-facebook: 			#3b5998;
+$social-twitter: 			#55acee;
+$social-pinterest: 			#cc2127;
+$social-google: 			#dd4b39;
+$social-linkedin: 			#0976b4;
+$social-dribbble: 			#ea4c89;
+$social-github: 			#333333;
+$social-youtube: 			#e52d27;
+$social-instagram: 		    #125688;
+$social-reddit: 			#ff4500;
+$social-tumblr: 			#35465c;
+
+$background-light-grey:     #E8E7E3 !default;
+$background-lighter-grey:   #F0EFEB !default;
+$font-background-light-grey: #9C9B99 !default;
+$font-hover-background-light-grey: #5E5E5C !default;
+
+// variables used in headers
+$header-background:         #B2AFAB !default;
+
+$filter-primary:         darken($primary-color, 10%);
+$filter-info:        darken($info-color, 10%);
+$filter-success:        darken($success-color, 10%);
+$filter-warning:       darken($warning-color, 10%);
+$filter-danger:          darken($danger-color, 10%);
+
+// variable used in footers
+$black-footer-bg:            #252422 !default;
+$brown-font-color:           #A49E9E !default;
+$brown-font-color-hover:     #F1EAE0 !default;
+
+//variables used in cards
+$card-black-color:           #333333 !default;
+$card-muted-color:           #ccc !default;
+
+$card-background-blue:      #b8d8d8 !default;
+$card-font-blue:            #506568 !default;
+$card-subtitle-blue:        #7a9e9f !default;
+
+$card-background-green:      #d5e5a3 !default;
+$card-font-green:            #60773d !default;
+$card-subtitle-green:        #92ac56 !default;
+
+$card-background-yellow:      #ffe28c !default;
+$card-font-yellow:            #b25825 !default;
+$card-subtitle-yellow:        #d88715 !default;
+
+$card-background-brown:      #d6c1ab !default;
+$card-font-brown:            #75442e !default;
+$card-subtitle-brown:        #a47e65 !default;
+
+$card-background-purple:      #baa9ba !default;
+$card-font-purple:            #3a283d !default;
+$card-subtitle-purple:        #5a283d !default;
+
+$card-background-orange:      #ff8f5e !default;
+$card-font-orange:            #772510 !default;
+$card-subtitle-orange:        #e95e37 !default;
+
+$card-background-primary:     #427C89 !default;
+$card-border-color:           #427C89 !default;
+
+$color-red-error: rgb(185, 74, 72) !default;
+$color-grey-arrow: rgba(204, 204, 204, 0.2) !default;
+
+$width-default: 220px !default; // 3 960px-grid columns
+
+$zindex-select-dropdown: 1060 !default; // must be higher than a modal background (1050)
+
+//** Placeholder text color
+$input-color-placeholder: #999 !default;
