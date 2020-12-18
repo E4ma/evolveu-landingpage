@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/evolveu-landingpage/static/css/main.e62e632d.chunk.css",
+    "main.js": "/evolveu-landingpage/static/js/main.65bbdae9.chunk.js",
+    "main.js.map": "/evolveu-landingpage/static/js/main.65bbdae9.chunk.js.map",
+    "runtime-main.js": "/evolveu-landingpage/static/js/runtime-main.68845c6f.js",
+    "runtime-main.js.map": "/evolveu-landingpage/static/js/runtime-main.68845c6f.js.map",
+    "static/js/2.5995bbe1.chunk.js": "/evolveu-landingpage/static/js/2.5995bbe1.chunk.js",
+    "static/js/2.5995bbe1.chunk.js.map": "/evolveu-landingpage/static/js/2.5995bbe1.chunk.js.map",
+    "static/js/3.5de4dfa3.chunk.js": "/evolveu-landingpage/static/js/3.5de4dfa3.chunk.js",
+    "static/js/3.5de4dfa3.chunk.js.map": "/evolveu-landingpage/static/js/3.5de4dfa3.chunk.js.map",
+    "index.html": "/evolveu-landingpage/index.html",
+    "static/css/main.e62e632d.chunk.css.map": "/evolveu-landingpage/static/css/main.e62e632d.chunk.css.map",
+    "static/js/2.5995bbe1.chunk.js.LICENSE.txt": "/evolveu-landingpage/static/js/2.5995bbe1.chunk.js.LICENSE.txt",
+    "static/media/EvolveU.7ea7b14b.jpg": "/evolveu-landingpage/static/media/EvolveU.7ea7b14b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.68845c6f.js",
+    "static/js/2.5995bbe1.chunk.js",
+    "static/css/main.e62e632d.chunk.css",
+    "static/js/main.65bbdae9.chunk.js"
+  ]
+}
