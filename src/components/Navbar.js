@@ -91,11 +91,21 @@ function IndexNavbar() {
         >
           <Nav navbar>
            
-           
+          <NavItem>
+              <NavLink
+                data-placement="bottom"
+                href="https://ca.linkedin.com/company/evolveu"
+                target="_blank"
+                title="LinkedIn"
+              >
+                <i className="fa fa-linkedin" />
+                <p className="d-lg-none">LinkedIn</p>
+              </NavLink>
+            </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="hhttps://twitter.com/EvolveuYYC"
+                href="https://twitter.com/EvolveuYYC"
                 target="_blank"
                 title="Follow us on Twitter"
               >
