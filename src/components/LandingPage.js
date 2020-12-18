@@ -1,6 +1,6 @@
 
 import React from "react";
-import Particles from "react-tsparticles";
+// import Particles from "react-tsparticles";
 import { Button, Container } from "reactstrap";
 
 // core components
@@ -37,8 +37,8 @@ function LandingPage() {
         <div className="filter" />
         <Container>
           <div className="motto text-center">
-          <div id="tsparticles"><Particles
-          /></div>
+          {/* <div id="tsparticles"><Particles
+          /></div> */}
             <h1>Cohort 6</h1>
             <h3>Welcome to your Full Stack Developer Program</h3>
             <br />
